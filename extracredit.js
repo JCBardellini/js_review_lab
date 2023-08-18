@@ -7,8 +7,8 @@ const cat1 = {
   breed: "British Shorthair",
   age: 10,
 };
-console.log(cat1.age);
-console.log(cat1.breed);
+// console.log(cat1.age);
+// console.log(cat1.breed);
 
 // 2. Papa Cat
 
@@ -33,27 +33,27 @@ const combineCats = (mama, papa) => {
 
 // 4. Cat brain bender
 
-console.log(
-  combineCats(
-    combineCats(combineCats(cat1, cat2), combineCats(cat1, cat2)),
-    combineCats(combineCats(cat1, cat2), combineCats(cat1, cat2))
-  )
-);
+// console.log(
+//   combineCats(
+//     combineCats(combineCats(cat1, cat2), combineCats(cat1, cat2)),
+//     combineCats(combineCats(cat1, cat2), combineCats(cat1, cat2))
+//   )
+// );
 
 //
-// const combineCatsOne = (mama, papa) => {
-//   const combinedCat = {
-//     name: mama.name + papa.name,
-//     age: 1,
-//     breed: mama.breed + "-" + papa.breed,
-//   };
-//   return combinedCat;
-// };
+const combineCatsOne = (mama, papa) => {
+  const combinedCat = {
+    name: mama.name + papa.name,
+    age: 1,
+    breed: mama.breed + "-" + papa.breed,
+  };
+  return combinedCat;
+};
 
-// const combinedCats = combineCatsOne(cat1, cat2);
+const combinedCats = combineCatsOne(cat1, cat2);
 // console.log(combinedCats);
-// const catBrainBlended = combineCatsOne(
-//   combineCatsOne(cat1, cat2),
-//   combineCatsOne(cat1, cat2)
-// );
-// console.log(catBrainBlended);
+const catBrainBlended = combineCatsOne(
+  combineCatsOne(combineCatsOne(cat1, cat2), combineCatsOne(cat1, cat2)),
+  combineCatsOne(combineCatsOne(cat1, cat2), combineCatsOne(cat1, cat2))
+);
+console.log(catBrainBlended);
