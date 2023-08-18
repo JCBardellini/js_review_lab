@@ -85,7 +85,7 @@ for (let i = 1; i <= 100; i++) {
 
 for (let i = 1; i <= 100; i++) {
   if (i % 2 == 0) {
-    console.log("<-- is an even number");
+    console.log(i + "<-- is an even number");
   }
 }
 
@@ -282,14 +282,14 @@ thomsCloset[1][2] = "Footie Pajamas";
 
 /** IV. Functions */
 
-A.printGreeting;
+// A.printGreeting;
 
 const printGreeting = (name) => {
   return "Hello there, " + name;
 };
 console.log(printGreeting("Slimer"));
 
-B.printCool;
+// B.printCool;
 const printCool = (name) => {
   return name + " is cool";
 };
