@@ -33,7 +33,12 @@ const combineCats = (mama, papa) => {
 
 // 4. Cat brain bender
 
-console.log(combineCats(combineCats(cat1, cat2), combineCats(cat1, cat2)));
+console.log(
+  combineCats(
+    combineCats(combineCats(cat1, cat2), combineCats(cat1, cat2)),
+    combineCats(combineCats(cat1, cat2), combineCats(cat1, cat2))
+  )
+);
 
 //
 // const combineCatsOne = (mama, papa) => {
